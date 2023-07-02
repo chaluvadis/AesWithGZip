@@ -1,7 +1,7 @@
 ﻿using AesDemo;
 using AesDemo.Models;
 DateTime createdOn = DateTime.Now.AddDays(-31);
-DateTime expiresOn = createdOn.AddDays(-30);
+DateTime expiresOn = DateTime.Now.AddDays(-30);
 var originalTokenRequest = new TokenRequest("SHA", "Its a conosle", "2023-1959-789234", "892345678", createdOn, expiresOn);
 
 byte[] key = new byte[32];

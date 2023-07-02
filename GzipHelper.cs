@@ -1,7 +1,4 @@
-using System.IO.Compression;
-
 namespace AesDemo;
-
 public static class GzipHelper
 {
     public static string Compress(string inputString)
